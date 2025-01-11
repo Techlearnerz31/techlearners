@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Stylish Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        .custom-button {
+            padding: 15px 40px;
+            font-size: 20px;
+            color: #fff;
+            background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .custom-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+        }
+
+        .custom-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <button class="custom-button">Click Me</button>
+</body>
+</html>
